@@ -2,8 +2,11 @@ package com.formacionntt.microservicios.app.usuarios.services;
 
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.formacionntt.microservicios.app.usuarios.models.entity.Alumno;
 
+@Service
 public class AlumnoServiceImpl implements AlumnoService {
 
 	@Override
