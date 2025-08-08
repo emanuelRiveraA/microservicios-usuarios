@@ -9,6 +9,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name="alumnos")
@@ -23,6 +25,7 @@ public class Alumno {
 	private String email;
 	
 	@Column( name = "create_at")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date createAt;
 	
 	@PrePersist
